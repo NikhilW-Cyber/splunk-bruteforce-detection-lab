@@ -1,6 +1,8 @@
-# Splunk Brute-Force Detection Lab (Windows + Kali)
+# Splunk Brute Force Detection Lab
 
+A cybersecurity lab demonstrating how to detect brute-force authentication attempts using Splunk SIEM by analyzing Windows Security Event Logs and simulating attacks from a Kali Linux machine.
 This project demonstrates a Blue Team SIEM workflow using Splunk:
+
 - Collect Windows Security logs using Splunk Universal Forwarder
 - Simulate failed network logons from a Kali attacker
 - Detect brute-force behavior using Splunk SPL
@@ -25,7 +27,16 @@ Splunk Enterprise on Ubuntu (SIEM)
 - Attacker: Kali Linux (SMB authentication attempts)
 
 ---
+## Skills Demonstrated
 
+- SIEM log analysis (Splunk)
+- Windows Security Event Log monitoring
+- Brute force attack detection
+- SPL (Splunk Processing Language)
+- Log forwarding using Splunk Universal Forwarder
+- Cyber attack simulation using Kali Linux
+- Security alert configuration
+  
 ## What I Built
 
 - Splunk receives Windows Security logs in `index=main`  
