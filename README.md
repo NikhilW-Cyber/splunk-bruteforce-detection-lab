@@ -12,8 +12,6 @@ This project demonstrates a Blue Team SIEM workflow using Splunk:
 
 ## Lab Architecture
 
-## Lab Architecture
-
 Kali Linux (Attacker)
         ↓
 Windows 10 (Log Source)
@@ -62,6 +60,14 @@ index=main source="WinEventLog:Security" EventCode=4625 Logon_Type=3
 5. If multiple failed logins occur from the same IP, a brute-force attempt is detected.
 6. A Splunk alert triggers when the threshold condition is met.
 
+## Tools Used
+
+- Splunk Enterprise
+- Splunk Universal Forwarder
+- Windows 10
+- Kali Linux
+- Oracle VirtualBox
+  
 ## Project Evidence (Screenshots)
 
 ### 1. Splunk server running and receiving connections
