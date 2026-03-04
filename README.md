@@ -20,11 +20,11 @@ Kali (Attacker) ➜ Windows 10 (Victim) ➜ Splunk Enterprise (Ubuntu SIEM)
 
 ## What I Built
 
- Splunk receives Windows Security logs in `index=main`  
- Kali generates failed network logons against Windows  
- Windows logs EventCode **4625 (Failed Logon)** with **Logon_Type = 3 (Network Logon)**  
- Splunk detection aggregates failures by attacker IP  
- Splunk alert triggers when the threshold is met  
+- Splunk receives Windows Security logs in `index=main`  
+- Kali generates failed network logons against Windows  
+- Windows logs EventCode **4625 (Failed Logon)** with **Logon_Type = 3 (Network Logon)**  
+- Splunk detection aggregates failures by attacker IP  
+- Splunk alert triggers when the threshold is met  
 
 ---
 
