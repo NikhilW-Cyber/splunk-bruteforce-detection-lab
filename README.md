@@ -31,7 +31,6 @@ Kali (Attacker) ➜ Windows 10 (Victim) ➜ Splunk Enterprise (Ubuntu SIEM)
 ## Key Detection Logic (SPL)
 
 ### Confirm failed network logons (4625, Logon_Type=3)
-````markdown
 ```spl
 index=main source="WinEventLog:Security" EventCode=4625 Logon_Type=3
 ```
@@ -39,7 +38,7 @@ index=main source="WinEventLog:Security" EventCode=4625 Logon_Type=3
 ## Project Evidence (Screenshots)
 
 ### 1. Splunk server running and receiving connections
-![Splunk Running](/screenshots/01_splunk_running_and ports.png)
+![Splunk Running](screenshots/01_splunk_running_and ports.png)
 
 ### 2. Windows Splunk Universal Forwarder service running
 ![Windows Forwarder](screenshots/02_windows_forwarder_running.png)
