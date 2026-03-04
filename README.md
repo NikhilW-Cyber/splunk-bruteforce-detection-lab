@@ -31,6 +31,7 @@ Kali (Attacker) ➜ Windows 10 (Victim) ➜ Splunk Enterprise (Ubuntu SIEM)
 ## Key Detection Logic (SPL)
 
 ### Confirm failed network logons (4625, Logon_Type=3)
+''''markdown
 ```spl
 
 index=main source="WinEventLog:Security" EventCode=4625 Logon_Type=3
