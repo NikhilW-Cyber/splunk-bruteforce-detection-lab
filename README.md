@@ -34,6 +34,7 @@ Kali (Attacker) ➜ Windows 10 (Victim) ➜ Splunk Enterprise (Ubuntu SIEM)
 ````markdown
 ```spl
 index=main source="WinEventLog:Security" EventCode=4625 Logon_Type=3
+```
 
 ## Project Evidence (Screenshots)
 
