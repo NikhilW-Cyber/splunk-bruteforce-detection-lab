@@ -12,14 +12,6 @@ This project demonstrates a Blue Team SIEM workflow using Splunk:
 
 ## Lab Architecture
 
-Kali Linux (Attacker)
-        ↓
-Windows 10 (Log Source)
-        ↓
-Splunk Universal Forwarder
-        ↓
-Splunk Enterprise on Ubuntu (SIEM)
-
 - Splunk Server: Ubuntu (Splunk Enterprise)
 - Log Source: Windows 10 (Windows Security Event Logs)
 - Attacker: Kali Linux (SMB authentication attempts)
