@@ -54,7 +54,7 @@ index=main source="WinEventLog:Security" EventCode=4625 Logon_Type=3
 ![Forwarder Restart](screenshots/05_forwarder_restart.png)
 
 ### 6. Windows logs successfully appearing in Splunk
-![Windows Logs](splunk-bruteforce-detection-lab/screenshots/06_windows_logs_success.png)
+![Windows Logs](https://github.com/NikhilW-Cyber/splunk-bruteforce-detection-lab/raw/main/screenshots/06_windows_logs_success.png)
 
 ### 7. Splunk showing available log sources
 ![Sources Breakdown](screenshots/07_sources_breakdown.png)
