@@ -10,7 +10,15 @@ This project demonstrates a Blue Team SIEM workflow using Splunk:
 
 ## Lab Architecture
 
-Kali (Attacker) ➜ Windows 10 (Victim) ➜ Splunk Enterprise (Ubuntu SIEM)
+## Lab Architecture
+
+Kali Linux (Attacker)
+        ↓
+Windows 10 (Log Source)
+        ↓
+Splunk Universal Forwarder
+        ↓
+Splunk Enterprise on Ubuntu (SIEM)
 
 - Splunk Server: Ubuntu (Splunk Enterprise)
 - Log Source: Windows 10 (Windows Security Event Logs)
@@ -34,6 +42,14 @@ Kali (Attacker) ➜ Windows 10 (Victim) ➜ Splunk Enterprise (Ubuntu SIEM)
 ```spl
 index=main source="WinEventLog:Security" EventCode=4625 Logon_Type=3
 ```
+## Detection Workflow
+
+1. Windows Security logs are collected by the Splunk Universal Forwarder.
+2. Logs are forwarded to the Splunk server on Ubuntu via port 9997.
+3. Failed authentication attempts (EventCode 4625) are indexed in Splunk.
+4. Splunk queries aggregate failed logins by Source_Network_Address.
+5. If multiple failed logins occur from the same IP, a brute-force attempt is detected.
+6. A Splunk alert triggers when the threshold condition is met.
 
 ## Project Evidence (Screenshots)
 
